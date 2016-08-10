@@ -1,0 +1,94 @@
+====== LAMP SERVER ======
+====== linux ======
+  * Ubuntu 16.04
+    * released in april 2016
+    * **codename: The Xenial Xerus**
+====== apache ======
+===== conf =====
+  *<file bash /etc/apache2/ports.conf>Listen 80
+<IfModule ssl_module>
+	Listen 443
+</IfModule>
+<IfModule mod_gnutls.c>
+	Listen 443
+</IfModule></file>
+  *<file bash /etc/apache2/conf-enabled/security.conf>ServerTokens Prod
+ServerSignature Off
+TraceEnable Off</file>
+===== logs =====
+    * /var/log/access.log
+    * /var/log/error.log
+    * /var/log/old.log
+      * to be erased DELETEME
+===== status codes =====
+==== 200 ====
+      * ok
+        * to be detailed FIXME
+==== 304 ====
+      * not modified
+==== 403 ====
+      * forbidden
+==== 404 ====
+      * not found
+==== 500 ====
+      * internal server error :!:
+      * important to avoid those errors
+        * **leads to site not be accessible :!:**
+==== 607 ====
+      * //unknown :?://
+====== php ======
+  * PHP is a server-side scripting language designed for web development but also used as a general-purpose programming language. Originally created by Rasmus Lerdorf in 1994, the PHP reference implementation is now produced by The PHP Group.
+  * http://php.net/manual/en/funcref.php
+  *<code php><?php
+header('Content-Type: text/html; charset=utf-8');
+mb_internal_encoding("utf8");
+$uploaddir = './';
+$uploadfile = $uploaddir."test.csv";
+ 
+if (copy($_FILES['uploadfile']['tmp_name'], $uploadfile)){
+    echo "<h3>okay</h3>"."<br>";
+}else{
+    echo "<h3>pb</h3>";
+    exit;
+}</code>
+====== mysql ======
+  * The following variables have to be set to the corresponding values
+  *<code bash>user		= mysql
+pid-file	= /var/run/mysqld/mysqld.pid
+socket		= /var/run/mysqld/mysqld.sock
+port		= 3306
+basedir		= /usr
+datadir		= /var/lib/mysql
+tmpdir		= /tmp
+lc-messages-dir	= /usr/share/mysql</code>
+====== others ======
+  * //**python script to parse the data**//
+  *<code python>#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+import os,sys,re
+from sys import argv
+import fnmatch
+
+extensions=["vmg"]
+
+def main(argv): 
+
+	print 'Argument List:', str(sys.argv)
+	try:                                
+		chemin=sys.argv[1]
+	except:          
+		print "ParseSamsungSMS : Samsung SMS files (VMG files)"                       
+		sys.exit(2) 
+
+	fichier=GetFileList(chemin,extensions)
+
+if __name__ == "__main__":
+	main(sys.argv[1:])</code>
+====== so cool ! ======
+  *<code raw>  _               __  __ _____  
+ | |        /\   |  \/  |  __ \ 
+ | |       /  \  | \  / | |__) |
+ | |      / /\ \ | |\/| |  ___/ 
+ | |____ / ____ \| |  | | |     
+ |______/_/    \_\_|  |_|_|   </code>
