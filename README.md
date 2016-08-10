@@ -30,5 +30,4 @@ Todo list
 - Adding support for additional icons
 - compiled binary version for windows
 
-
 Stay tuned for updates and please, feel free to report any bug to the author.
