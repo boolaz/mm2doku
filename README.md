@@ -26,11 +26,11 @@ Let's say we took some notes on a freemind map
 
 Here is the source file from freemind
 
-![lamp.mm](https://github.com/boolaz/mm2doku/blob/master/sample/1-freemind_lamp.mm)
+[lamp.mm](https://github.com/boolaz/mm2doku/blob/master/sample/1-freemind_lamp.mm)
 
 With mm2doku, you can easily convert your map file to this file
 
-![lamp.txt](https://github.com/boolaz/mm2doku/blob/master/sample/3-lamp_exported.txt)
+[lamp.txt](https://github.com/boolaz/mm2doku/blob/master/sample/3-lamp_exported.txt)
 
 When you paste the code above in dokuwiki, you'll be presented with the following page and the text will be indexed for search.
 
@@ -38,7 +38,7 @@ When you paste the code above in dokuwiki, you'll be presented with the followin
 
 Eventually, if you print the page in PDF, you'll obtain the following file
 
-![dokuwiki-printed.pdf](https://github.com/boolaz/mm2doku/blob/master/sample/5-dokuwiki_printed.pdf)
+[dokuwiki-printed.pdf](https://github.com/boolaz/mm2doku/blob/master/sample/5-dokuwiki_printed.pdf)
 
 ## Prerequisites
 
