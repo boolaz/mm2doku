@@ -9,6 +9,13 @@
 mm2doku
 =======
 
+The purpose of this tool is to convert Freemind maps to dokuwiki syntax
+
+![freemind map](https://github.com/boolaz/mm2doku/blob/master/sample/2-freemind_scr.jpg)
+
+![dokuwiki page](https://github.com/boolaz/mm2doku/blob/master/sample/4-dokuwiki_scr.png)
+
+
 Prerequisites
 -------------
 
