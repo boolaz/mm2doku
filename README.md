@@ -51,6 +51,5 @@ As an output, you'll get a text file containing the converted document that you 
 ## Todo list
 
 - Adding support for additional icons
-- compiled binary version for windows
 
 Stay tuned for updates and please, feel free to report any bug to the author.
