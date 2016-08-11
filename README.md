@@ -12,7 +12,8 @@ The purpose of this tool is to convert Freemind maps to dokuwiki syntax.
 
 ## Prerequisites
 
-mm2doku has been developed in python 2.7 and has been successfully tested on Linux Ubuntu 14.04 LTS and MacOSX 10.11.6 El Capitan. This tool doesn't require any additional python modules to be run.
+mm2doku has been developed in python 2.7 and has been successfully tested on Linux Ubuntu 14.04 LTS, MacOSX 10.11.6 El Capitan and Windows 8.1 x64. This tool doesn't require any additional python modules to be run.
+A stand-alone binary version for windows is also available for download.
 
 ## Context
 
