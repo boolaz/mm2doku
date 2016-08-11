@@ -5,7 +5,7 @@
 <node CREATED="1470822441567" HGAP="33" ID="ID_587946650" MODIFIED="1470826879081" POSITION="right" TEXT="linux" VSHIFT="6">
 <icon BUILTIN="forward"/>
 <node CREATED="1470822600252" HGAP="25" ID="ID_1291823549" MODIFIED="1470825967023" TEXT="Ubuntu 16.04" VSHIFT="-21">
-<node CREATED="1470825967024" ID="ID_1486213474" MODIFIED="1470825979144" TEXT="released in april 2016"/>
+<node CREATED="1470825967024" ID="ID_1486213474" MODIFIED="1470899136165" TEXT="released in april 2016"/>
 <node CREATED="1470825980964" ID="ID_1196272031" MODIFIED="1470826001905" TEXT="codename: The Xenial Xerus">
 <font BOLD="true" NAME="Arial" SIZE="10"/>
 </node>
@@ -105,9 +105,9 @@
 </node>
 <node CREATED="1470825717318" HGAP="25" ID="ID_290273036" MODIFIED="1470826897465" POSITION="left" TEXT="others" VSHIFT="-111">
 <icon BUILTIN="forward"/>
-<node CREATED="1470825720339" FOLDED="true" ID="ID_1361543110" MODIFIED="1470826922337" TEXT="python script to parse the data">
+<node CREATED="1470825720339" ID="ID_1361543110" MODIFIED="1470899466424" TEXT="python script to parse the data">
 <font BOLD="true" ITALIC="true" NAME="Arial" SIZE="10"/>
-<node CREATED="1470825733340" ID="ID_1322244915" MODIFIED="1470825740277" TEXT="script python">
+<node CREATED="1470825733340" FOLDED="true" ID="ID_1322244915" MODIFIED="1470901325873" TEXT="script python">
 <node CREATED="1470825740781" ID="ID_1360222624" MODIFIED="1470825755845" TEXT="#!/usr/bin/python&#xa;# -*- coding: utf-8 -*-&#xa;&#xa;import os,sys,re&#xa;from sys import argv&#xa;import fnmatch&#xa;&#xa;extensions=[&quot;vmg&quot;]&#xa;&#xa;def main(argv): &#xa;&#xa;&#x9;print &apos;Argument List:&apos;, str(sys.argv)&#xa;&#x9;try:                                &#xa;&#x9;&#x9;chemin=sys.argv[1]&#xa;&#x9;except:          &#xa;&#x9;&#x9;print &quot;ParseSamsungSMS : Samsung SMS files (VMG files)&quot;                       &#xa;&#x9;&#x9;sys.exit(2) &#xa;&#xa;&#x9;fichier=GetFileList(chemin,extensions)&#xa;&#xa;if __name__ == &quot;__main__&quot;:&#xa;&#x9;main(sys.argv[1:])">
 <font NAME="Courier New" SIZE="8"/>
 </node>
