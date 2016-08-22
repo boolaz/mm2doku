@@ -145,7 +145,7 @@ def process_lines(f):
 
     global all_lines
     level=line_nb=0
-    lines = f.readlines()
+    lines = read_lines_from_file(f)
 
     while line_nb < len(lines):
 
@@ -223,8 +223,20 @@ def process_lines(f):
         # END OF CURRENT NODE
         elif re.match("^</node>", line, re.IGNORECASE):
             level-=1
-            
+
         line_nb+=1
+
+#-------------------------
+def read_lines_from_file(f):
+    """parses signe-line files"""
+    lignes=f.readlines()
+    nblines=len(lignes)
+    # print "{}".format(nblines)
+    if len(lignes)==1:
+        final_lines=lignes[0].replace("><", ">\n<").split("\n")
+    else:
+        final_lines=lignes
+    return final_lines
 
 #-------------------------
 def dump_all_lines():
