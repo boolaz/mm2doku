@@ -231,7 +231,6 @@ def read_lines_from_file(f):
     """parses signe-line files"""
     lignes=f.readlines()
     nblines=len(lignes)
-    # print "{}".format(nblines)
     if len(lignes)==1:
         final_lines=lignes[0].replace("><", ">\n<").split("\n")
     else:
